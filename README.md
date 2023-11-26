@@ -1,2 +1,2 @@
 # AP2-Trabalho
-AP2-DWeb
+Trabalho de Desenvolvimento Web sobre os atletas do Botafogo
