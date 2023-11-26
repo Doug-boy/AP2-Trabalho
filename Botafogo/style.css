@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:wght@400;500;600&display=swap');
+button {
+    color: #ffffff;
+    margin: 1em;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 60px;
+    font-size: 20px;
+    border-style: none;
+    background-color: black;
+}
+button:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+
+input {
+    color: #000000;
+    margin: 1em;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: white;
+}
+img {
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card{
+    display: flex;
+    width: 220px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+.infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+
+.sair #titulo {
+    margin: 1em;
+}
+.sair {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+
+#jogadores {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 0.5em;
+    margin: 0px auto;
+}
+
+@media screen and (min-width: 768px){
+    #jogadores {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #jogadores {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
