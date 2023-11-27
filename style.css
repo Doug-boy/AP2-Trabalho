@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 button {
     color: #ffffff;
     margin: 1em;
@@ -9,7 +14,8 @@ button {
     border-style: none;
     background-color: black;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(39, 39, 39);
 }
 
@@ -18,11 +24,11 @@ button:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
 }
-#pagina-login{
+
+#pagina-login {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 90%;
@@ -33,107 +39,68 @@ input {
     margin: 1em;
     padding-block: 10px;
     padding-inline: 20px;
-    border-radius: 60px;
-    font-size: 20px;
+    border-radius: 10px; /* Reduced border-radius for smaller screens */
+    font-size: 16px; /* Reduced font-size for smaller screens */
     background-color: white;
 }
 
-
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-.card{
+.card {
     display: flex;
-    width: 220px;
+    width: 100%; /* Take full width on smaller screens */
     justify-content: center;
     flex-direction: column;
     margin: 0px auto;
 }
-.card img{
-    border-radius: 20px;
+
+.card img {
+    width: 100%; /* Take full width on smaller screens */
+    border-radius: 10px;
     box-shadow: 10px 10px 7px #00000072;
 }
 
-.card img:hover{
-    transform: scale(1.1); 
+.card img:hover {
+    transform: scale(1.1);
     transition: all 0.5s;
-    border-radius: 21px;
+    border-radius: 11px;
     box-shadow: none;
-    
-}
-.infos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px auto;
 }
 
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#logo #titulo {
-    margin: 1em;
-}
-#logo img {
-   width: 50px;
-}
-.header {
-    display: flex;
-    align-items: end;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-.botoes {
-    display: flex;
-    justify-content: center;
-}
-#loading {
-    display: flex;
-    justify-content: center;
-}
-#content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#jogadores {
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: repeat(1, 1fr); 
-    gap: 0.5em;
-    margin: 0px auto;
-}
-
-@media screen and (min-width: 768px){
+/* Add a media query for smaller screens */
+@media screen and (max-width: 767px) {
     #jogadores {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    input, button {
+        font-size: 18px;
+        padding-inline: 15px;
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px) {
     #jogadores {
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-#detalhe{
- padding: 60px;
- display: flex;
- align-items: center;
- flex-direction: column;
+@media screen and (min-width: 1024px) {
+    #jogadores {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
-#detalhe img{
-    width: 300px;
-    border-radius: 20px;
 
+#detalhe {
+    padding: 20px; /* Reduced padding for smaller screens */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-#detalhe h1{
-font-size: 6em;
+
+#detalhe img {
+    width: 100%; /* Take full width on smaller screens */
+    border-radius: 10px;
+}
+
+#detalhe h1 {
+    font-size: 3em; /* Reduced font size for smaller screens */
 }
