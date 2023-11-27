@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:wght@400;500;600&display=swap');
+button {
+    color: #ffffff;
+    margin: 1em;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-style: none;
+    background-color: black;
+}
+button:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+#div-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#pagina-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+}
+
+input {
+    color: #000000;
+    margin: 1em;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card{
+    display: flex;
+    width: 220px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+.card img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 7px #00000072;
+}
+
+.card img:hover{
+    transform: scale(1.1); 
+    transition: all 0.5s;
+    border-radius: 21px;
+    box-shadow: none;
+    
+}
+.infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo #titulo {
+    margin: 1em;
+}
+#logo img {
+   width: 50px;
+}
+.header {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+#loading {
+    display: flex;
+    justify-content: center;
+}
+#content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jogadores {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 0.5em;
+    margin: 0px auto;
+}
+
+@media screen and (min-width: 768px){
+    #jogadores {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #jogadores {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+#detalhe{
+ padding: 60px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+#detalhe img{
+    width: 300px;
+    border-radius: 20px;
+
+}
+#detalhe h1{
+font-size: 6em;
+}
